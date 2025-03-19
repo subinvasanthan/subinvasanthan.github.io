@@ -1,0 +1,77 @@
+:root {
+    --bg-color: #121212;
+    --text-color: white;
+    --header-bg: #1a1a1a;
+    --card-bg: #2a2a2a;
+    --link-color: #4db8ff;
+}
+
+.light-mode {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --header-bg: #f0f0f0;
+    --card-bg: #e0e0e0;
+    --link-color: #0077cc;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    text-align: center;
+    transition: background 0.5s, color 0.5s;
+}
+
+header {
+    padding: 2rem 1rem;
+    background: var(--header-bg);
+}
+
+section {
+    padding: 2rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+footer {
+    padding: 1rem;
+    background: var(--header-bg);
+}
+
+/* Toggle Button */
+.theme-toggle {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: var(--link-color);
+    color: white;
+    transition: background 0.3s;
+}
+
+.theme-toggle:hover {
+    opacity: 0.8;
+}
