@@ -30,6 +30,13 @@ header {
     background: var(--header-bg);
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
 section {
     padding: 2rem;
 }
@@ -59,9 +66,21 @@ footer {
     background: var(--header-bg);
 }
 
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 60px; /* Adjust as needed */
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
 /* Toggle Button */
 .theme-toggle {
-    margin-top: 10px;
+    margin-top: 0;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
