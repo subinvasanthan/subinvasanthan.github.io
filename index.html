@@ -5,42 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Subin Vasanthan</title>
     <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: white;
+            --header-bg: #1a1a1a;
+            --card-bg: #2a2a2a;
+            --link-color: #4db8ff;
+        }
+
+        .light-mode {
+            --bg-color: #ffffff;
+            --text-color: #000000;
+            --header-bg: #f0f0f0;
+            --card-bg: #e0e0e0;
+            --link-color: #0077cc;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #121212;
-            color: white;
+            background: var(--bg-color);
+            color: var(--text-color);
             line-height: 1.6;
             text-align: center;
+            transition: background 0.5s, color 0.5s;
         }
+
         header {
             padding: 2rem 1rem;
-            background: #1a1a1a;
+            background: var(--header-bg);
         }
+
         section {
             padding: 2rem;
         }
+
         .projects {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 1.5rem;
         }
+
         .project-card {
-            background: #2a2a2a;
+            background: var(--card-bg);
             padding: 1rem;
             border-radius: 10px;
             width: 300px;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
         }
+
         a {
-            color: #4db8ff;
+            color: var(--link-color);
             text-decoration: none;
         }
+
         footer {
             padding: 1rem;
-            background: #1a1a1a;
+            background: var(--header-bg);
+        }
+
+        /* Toggle Button */
+        .theme-toggle {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: var(--link-color);
+            color: white;
+            transition: background 0.3s;
+        }
+
+        .theme-toggle:hover {
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -97,6 +137,22 @@
     document.getElementById("experience").innerHTML = `Hello! I'm a passionate management techy with ${totalExperience}+ years of experience in ICT, SAS, and ELV systems, including ${airportExperience}+ years leading large-scale airport projects from concept to completion. Proven expertise in managing complex systems, site operations, building automation, and energy management services. Experienced in leveraging AI technologies to enhance system efficiency, automate processes, and deliver advanced data analytics solutions.`;
 	
 	document.getElementById("currentyear").innerHTML = `&copy; ${currentYear} Subin Vasanthan - Portfolio`;
+	
+    // Theme Toggle
+    function toggleTheme() {
+        document.body.classList.toggle("light-mode");
+        const theme = document.body.classList.contains("light-mode") ? "light" : "dark";
+        localStorage.setItem("theme", theme); // Save preference
+    }
+
+    // Apply saved theme on load
+    window.onload = function() {
+        if (localStorage.getItem("theme") === "light") {
+            document.body.classList.add("light-mode");
+        }
+    }	
+	
+	
 </script>
 
 </body>
