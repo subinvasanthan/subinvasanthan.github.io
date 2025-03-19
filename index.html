@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Portfolio - Subin Vasanthan</title>
+    <title>Portfolio - Subin Vasanthan</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -47,13 +47,13 @@
 <body>
 
 <header>
-    <h1>Welcome to My AI Portfolio</h1>
-    <p>Showcasing My Skills in AI and Automation</p>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Synopsis of my Skills and Experiences</p>
 </header>
 
 <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm a passionate AI explorer on many fields like facial recognition, Faiss indexing, and intelligent automation.</p>
+    <p id="experience"></p>
 </section>
 
 <section id="projects">
@@ -81,12 +81,21 @@
 
 <section id="contact">
     <h2>Contact Me</h2>
-    <p>Connect with me on <a href="mailto:subinvasanthan@gmail.com" target="_blank">Email Me</a> or <a href="https://linkedin.com/in/subinvasanthan" target="_blank">LinkedIn</a> or <a href="https://github.com/subinvasanthan" target="_blank">GitHub</a>.</p>
+    <p>Connect with me on <a href="mailto:subinvasanthan@gmail.com" target="_blank">Email Me</a> or <a href="https://linkedin.com/in/subinvasanthan" target="_blank">LinkedIn</a>.</p>
 </section>
 
 <footer>
     <p>&copy; 2025 Subin Vasanthan - AI Explorer Portfolio</p>
 </footer>
+
+<script>
+    const startYear = 2005; // Adjust this based on your experience start year
+    const currentYear = new Date().getFullYear();
+    const totalExperience = currentYear - startYear;
+    const airportExperience = totalExperience - 5; // Adjust based on your specific history
+
+    document.getElementById("experience").innerHTML = `Hello! I'm a passionate management techy with ${totalExperience}+ years of experience in ICT, SAS, and ELV systems, including ${airportExperience}+ years leading large-scale airport projects from concept to completion. Proven expertise in managing complex systems, site operations, building automation, and energy management services. Experienced in leveraging AI technologies to enhance system efficiency, automate processes, and deliver advanced data analytics solutions.`;
+</script>
 
 </body>
 </html>
