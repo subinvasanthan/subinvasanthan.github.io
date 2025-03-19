@@ -35,6 +35,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    background: var(--header-bg);
 }
 
 section {
@@ -72,15 +73,37 @@ footer {
 }
 
 .profile img {
-    width: 30px; /* Adjust as needed */
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--link-color);
+}
+
 /* Toggle Button */
 .theme-toggle {
-    margin-top: 0;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -93,4 +116,31 @@ footer {
 
 .theme-toggle:hover {
     opacity: 0.8;
+}
+
+
+#download {
+    padding: 2rem;
+    text-align: center;
+}
+
+.cv-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.cv-links a {
+    text-decoration: none;
+    color: white;
+    background: var(--link-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cv-links a:hover {
+    background: #0066aa;
 }
