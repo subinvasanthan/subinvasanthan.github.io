@@ -24,7 +24,7 @@
             <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Technical Manager</p>
+            <p>Senior Manager</p>
             <h1><span>Subin</span><br>Vasanthan</h1>
         </div>
     </div>
@@ -224,7 +224,7 @@
 
 </script>
 <script>
-    const scriptURL = '< add you own link here >' // add your own app script link here
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwAeVbXM_gShJ9l8BZLb00L12zV-5LCalcSz2ihJ4V5IWD6DNDK80TkVwoBplmdsu9I/exec' // add your own app script link here
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById("msg")
   
@@ -252,21 +252,6 @@
     `Hello! I'm a passionate management techy with ${totalExperience}+ years of experience in ICT, SAS, and ELV systems, including ${airportExperience}+ years leading large-scale airport projects from concept to completion. Proven expertise in managing complex systems, site operations, building automation, and energy management services. Experienced in leveraging AI technologies to enhance system efficiency, automate processes, and deliver advanced data analytics solutions.`;
 
     document.getElementById("currentyear").innerHTML = `&copy; ${currentYear} Subin Vasanthan - Portfolio`;
-
-    // Theme Toggle
-    function toggleTheme() {
-        document.body.classList.toggle("light-mode");
-        const theme = document.body.classList.contains("light-mode") ? "light" : "dark";
-        localStorage.setItem("theme", theme); // Save preference
-    }
-
-    // Apply saved theme on load
-    window.onload = function() {
-        if (localStorage.getItem("theme") === "light") {
-            document.body.classList.add("light-mode");
-        }
-    };
-
   </script>  
 </body>
 </html>
