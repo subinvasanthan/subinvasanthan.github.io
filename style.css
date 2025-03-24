@@ -22,6 +22,9 @@ body{
 .container{
     padding: 10px 10%;
 }
+.container .about-col-2 p{
+    text-align: justify;
+}
 
 nav{
     display: flex;
