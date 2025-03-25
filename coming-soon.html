@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration and Interfaces</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/bd7585b95f.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div id="coming-intheader">
+        <div class="page1-container">
+            <nav>
+                <img src="images/logo.webp" class="logo">
+                <!-- Link to main page using Font Awesome icon -->
+
+            </nav>
+            <div class="page1-header-text">
+                <h1><span>Coming Soon</span>...<br><br></h1>
+                <a href="index.html#header" class="home-icon">
+                    <i class="fas fa-home"></i> <!-- Home icon -->
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+

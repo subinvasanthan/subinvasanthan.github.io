@@ -19,32 +19,14 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-#page1-intheader{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/integration.webp);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-#comingsoon-intheader{
-    width: 100%;
-    height: 100vh;
-    background-image: url(images/background.webp);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
 .container{
     padding: 10px 10%;
 }
-
-.page1-container{
-    padding: 10px 10%;
-    text-align: Center;
-}
 .container .about-col-2 p{
     text-align: justify;
+}
+.container .header-text p{
+    font-size: 60px;
 }
 nav{
     display: flex;
@@ -73,7 +55,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff0000;
+    background: #D30000;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -93,52 +75,20 @@ nav ul li a:hover::after{
 .header-text-pos h1 span{
     color: #ff0000;
 }
-
 .header-text{
     margin-top: 20%;
-    font-size: 60px;
+    font-size: 30px;
 }
-.header-text p{
-    font-size: 60px;
-    color: #ADD8E6;
-}
-.header-text-right{
-    width: 50%;
-    margin-left: 60%;
-    margin-bottom: 50%;
-    font-size: 45px;
-}
-.header-text-right p{
-    font-size: 60px;
-    color: #ADD8E6;
-}
-.page1-header-text{
-    margin-top: 15%;
-}
-
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
 }
-.page1-header-text h1{
-    font-size: 100px;
-    margin-top: 10px;
-}
-
 .header-text h1 span{
-    color: #FFD700;
+    color: #ff0000;
 }
-.header-text-right h1 span{
-    color: #FFD700;
-}
-.page1-header-text h1 span{
-    color: #FFD700;
-}
-
 .header-text h1 white{
     color: #ffffff;
 }
-
 .header-text h1 yellow{
     color: #fdf908;
 }
@@ -185,7 +135,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #FFD700;
+    background: #ff0000;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -201,7 +151,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #ADD8E6;
+    color: #ff0000;
     font-size: 16px;
 }
 .tab-contents{
@@ -246,7 +196,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #05b1f560;
+    background: #ff0000;
     transform: translateY(-10px);
 }
 /* -------portfolio----------- */
@@ -273,7 +223,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #066f99);
+    background: linear-gradient(rgba(0,0,0,0.6), #ff0000);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -404,26 +354,12 @@ nav .fas{
         background-image: url(images/phone-background.webp);
     }
     .header-text{
-        margin-top: 40%;
+        margin-top: 100%;
         font-size: 16px;
     }
-    .header-text-right{
-        width: 50%;
-        margin-left: 50%;
-        margin-top: 50%;
-        margin-bottom: 10%;
-        font-size: 80%;
-    }
-    .page1-header-text{
-        margin-top: 100%;
-        font-size: 22px;
-    }    
     .header-text h1{
-        font-size: 40px;
+        font-size: 30px;
     }
-    .page1-header-text h1{
-        font-size: 40px;
-    }    
     nav .fas{
         display: block;
         font-size: 25px;
@@ -490,3 +426,28 @@ nav .fas{
 }
 
 
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
