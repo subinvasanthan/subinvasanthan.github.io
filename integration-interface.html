@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integration and Interfaces</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/bd7585b95f.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div id="page1-intheader">
+        <div class="page1-container">
+            <nav>
+                <img src="images/logo.webp" class="logo">
+                <!-- Link to main page using Font Awesome icon -->
+
+            </nav>
+            <div class="page1-header-text">
+                <h1><span>Integration</span><br>&<br>Interfaces<br></h1>
+                <a href="index.html#header" class="home-icon">
+                    <i class="fas fa-home"></i> <!-- Home icon -->
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- ---------Integration and Interfaces---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">
+            <a href="index.html#header" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="integration-interface.html" class="home-icon">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+            Integration
+        </h1>
+        <p><br>Seamless Integration Management is critical for ensuring efficient airport operations by enabling 
+        real-time data exchange, system interoperability, and coordinated decision-making.</p>
+
+        <h3><br>Key System Integrations & Message Exchanges</h3>
+        <p><br>Here are some critical airport system integrations and the types of messages exchanged:</p><br>
+        
+        <ul>
+            <li><strong>AODB-ATC:</strong><br>
+                <small> Arrival Flight: <i>•	Flight Plan filed from outstation, •Take-off from outstation, • 30 miles out, • Twelve minutes out, • Outer marker, • Touchdown, • On Blocks</i></small><br>
+                <small>Departure Flight: <i>• Flight Plan filed, • Issuance of TOBT, • Start of boarding, • Aircraft ready, • Start up approval time, • off blocks, • Take off</i></small><br>
+                <small>Stand Allocation: <i>Publish stand allocations from AMS to ATC</i></small>
+            </li>
+            <li><strong>AODB-BHS:</strong><br>
+                <small>Departure Flight: <i>•Flight schedule and flight data updates (AODB to BHS), • Makeup belt allocation (BHS to AODB)</i></small><br>
+                <small>Arrival Flight: <i>•	Carousel allocation and arrival time (AODB to BHS), • First Bag/Last Bag time (BHS to AODB)</i></small><br>
+            </li>
+            <li><strong>AODB-BRS:</strong><br>
+                <small>Departure Flight: <i>•	Flight data (AODB to BRS)</i></small><br>
+            </li>
+            <li><strong>AODB-CUPPS:</strong><br>
+                <small>Log In:  <i>• Log in allowed/denied, • Check-in counter allowable usage duration, • Force log off after duration true/false</i>/small><br>
+                <small>Log Out: <i>• Check check-in desk -in agent log out of , • CUPPS sends check-in desk usage details to IIB, • At force log off time – 5 minutes, a warning will be raised to the user, • At force log off time the user will be automatically logged off,  • IIB publishes check-in desk usage details to reporting system</i></small>
+            </li>
+            <li><strong>AODB-ERP:</strong><br>
+                <small> Monthly Billing Run: Eg: <i>• Departure Billable Pax, • Landing Charge, • Parking Charge, • Departing Pax Charge, • CUPPS Charge, • Fuel Standby Charge, • GPU Charge, • PCA Charge, • GSE Charge</i></small><br>
+            </li>
+            <li><strong>AODB-FIDS:</strong><br>
+               <small> Departure Flight: <i>• Flight schedule (AODB to FIDS), • Resource allocations (RMS to FIDS), •Flight data update (AODB to FIDS), • Gate status updates (FIDS to AODB)</i></small><br>
+               <small> Arrival Flight: <i>•	 Flight schedule (AODB to FIDS), • Flight data (AODB to FIDS), • Flight data (FIDS to AODB)</i></small><br>
+            </li>
+            <li><strong>AODB-FMS:</strong><br>
+               <small> Ad-Hoc & Scheduled Resource Downgrade: <i>• Parking Stand, • Boarding Gate, • Reclaim Carousel</i></small><br>
+            </li>                     
+        </ul>
+
+    </div>
+    <div class="container">
+        <h1 class="sub-title">
+            <a href="index.html#header" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="integration-interface.html" class="home-icon">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+            Interface Management
+        </h1>
+        <p><br>Effective interface management is essential for defining roles, responsibilities, and system boundaries across different stakeholders in projects. Proper interface documentation ensures clear accountability and prevents integration issues during system deployment.</p>
+
+        <h3><br>Key System Integrations & Message Exchanges</h3>
+        <p><br>Here are some critical airport system integrations and the types of messages exchanged:</p><br>
+        
+        <ul>
+            <li><strong>AODB ↔ ATC:</strong><br>
+                Arrival Flight:<small> •	Flight Plan filed from outstation, •Take-off from outstation, • 30 miles out, • Twelve minutes out, • Outer marker, • Touchdown, • On Blocks</small><br>
+                Departure Flight:<small> • Flight Plan filed, • Issuance of TOBT, • Start of boarding, • Aircraft ready, • Start up approval time, • off blocks, • Take off</small><br>
+                Stand Allocation:<small> Publish stand allocations from AMS to ATC</small>
+            </li>
+            <li><strong>AODB ↔ ATC:</strong><br>
+                Arrival Flight:<small> •	Flight Plan filed from outstation, •Take-off from outstation, • 30 miles out, • Twelve minutes out, • Outer marker, • Touchdown, • On Blocks</small><br>
+                Departure Flight:<small> • Flight Plan filed, • Issuance of TOBT, • Start of boarding, • Aircraft ready, • Start up approval time, • off blocks, • Take off</small><br>
+                Stand Allocation:<small> Publish stand allocations from AMS to ATC</small>
+            </li>
+            <li><strong>AODB ↔ ATC:</strong><br>
+                Arrival Flight:<small> •	Flight Plan filed from outstation, •Take-off from outstation, • 30 miles out, • Twelve minutes out, • Outer marker, • Touchdown, • On Blocks</small><br>
+                Departure Flight:<small> • Flight Plan filed, • Issuance of TOBT, • Start of boarding, • Aircraft ready, • Start up approval time, • off blocks, • Take off</small><br>
+                Stand Allocation:<small> Publish stand allocations from AMS to ATC</small>
+            </li>
+            <li><strong>AODB ↔ ATC:</strong><br>
+                Arrival Flight:<small> •	Flight Plan filed from outstation, •Take-off from outstation, • 30 miles out, • Twelve minutes out, • Outer marker, • Touchdown, • On Blocks</small><br>
+                Departure Flight:<small> • Flight Plan filed, • Issuance of TOBT, • Start of boarding, • Aircraft ready, • Start up approval time, • off blocks, • Take off</small><br>
+                Stand Allocation:<small> Publish stand allocations from AMS to ATC</small>
+            </li>
+            <li><strong>AODB ↔ ATC:</strong><br>
+                Arrival Flight:<small> •	Flight Plan filed from outstation, •Take-off from outstation, • 30 miles out, • Twelve minutes out, • Outer marker, • Touchdown, • On Blocks</small><br>
+                Departure Flight:<small> • Flight Plan filed, • Issuance of TOBT, • Start of boarding, • Aircraft ready, • Start up approval time, • off blocks, • Take off</small><br>
+                Stand Allocation:<small> Publish stand allocations from AMS to ATC</small>
+            </li>
+            <li><strong>AODB ↔ ATC:</strong><br>
+                Arrival Flight:<small> •	Flight Plan filed from outstation, •Take-off from outstation, • 30 miles out, • Twelve minutes out, • Outer marker, • Touchdown, • On Blocks</small><br>
+                Departure Flight:<small> • Flight Plan filed, • Issuance of TOBT, • Start of boarding, • Aircraft ready, • Start up approval time, • off blocks, • Take off</small><br>
+                Stand Allocation:<small> Publish stand allocations from AMS to ATC</small>
+            </li>
+            <li><strong>AODB ↔ ATC:</strong><br>
+                Arrival Flight:<small> •	Flight Plan filed from outstation, •Take-off from outstation, • 30 miles out, • Twelve minutes out, • Outer marker, • Touchdown, • On Blocks</small><br>
+                Departure Flight:<small> • Flight Plan filed, • Issuance of TOBT, • Start of boarding, • Aircraft ready, • Start up approval time, • off blocks, • Take off</small><br>
+                Stand Allocation:<small> Publish stand allocations from AMS to ATC</small>
+            </li>                     
+        </ul>
+
+    </div>   
+    <div class="container">
+        <a href="index.html#header" class="home-icon">
+            <i class="fas fa-home"></i>
+        </a>
+        <a href="integration-interface.html" class="home-icon">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a> 
+    </div>    
+</div>
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+

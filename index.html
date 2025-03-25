@@ -38,7 +38,12 @@
                 <img src="images/user.webp">
             </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
+                <h1 class="sub-title">
+                    <a href="#header" class="home-icon">
+                        <i class="fas fa-home"></i>
+                    </a>                      
+                    About Me
+                </h1>
                 <p id="totexp"> </p>
 
                 <div class="tab-titles">
@@ -78,14 +83,19 @@
 <!-- ---------services---------------- -->
 <div id="services">
     <div class="container">
-        <h1 class="sub-title">Experience</h1>
+        <h1 class="sub-title">
+            <a href="#header" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+            Experience
+        </h1>
         <div class="services-list">
             <div>
                 <!-- the below code fas fa-code is to be downloaded from the https://fontawesome.com/icons website. by this we will have different icons for different codes----- -->
                 <i class="fa-solid fa-network-wired"></i>
                 <h2>Integration and Interface Management</h2>
                 <p>Integration and Interface Management.</p>
-                <a href="#">Learn more</a>
+                <a href="integration-interface.html">Learn more</a>
             </div>
             <div>
                 <i class="fa-solid fa-plane"></i>
@@ -129,7 +139,12 @@
 <!-- ----------portfolio------------ -->
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">Knowledge Base</h1>
+        <h1 class="sub-title">
+            <a href="#header" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>            
+            Knowledge Base
+        </h1>
         <div class="work-list">
             <div class="work">
                 <img src="images/work-1.webp">
@@ -164,7 +179,12 @@
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
+                <h1 class="sub-title">
+                    <a href="#header" class="home-icon">
+                        <i class="fas fa-home"></i>
+                    </a>                      
+                    Contact Me
+                </h1>
                 <p>
                     <i class="fa-regular fa-envelope"></i>
                     <a href="mailto:subinvasanthan@gmail.com" target="_blank" style="text-decoration: none; color: inherit;">subinvasanthan@gmail.com</a>
@@ -255,7 +275,11 @@
     const totalExperience = currentYear - startYear - 2;
     const airportExperience = totalExperience - 5; // Adjust based on your specific history
     document.getElementById("totexp").innerHTML = 
-    `Hello! I'm a passionate management techy with ${totalExperience}+ years of experience in ICT, SAS, and ELV systems, including ${airportExperience}+ years leading large-scale airport projects from concept to completion. Proven expertise in managing complex systems, site operations, building automation, and energy management services. Experienced in leveraging AI technologies to enhance system efficiency, automate processes, and deliver advanced data analytics solutions.`;
+    `Hello! I'm a passionate management tech enthusiast with over ${totalExperience}+ years of experience in ICT, SAS, and ELV systems, including 
+    ${airportExperience}+ years of leading large-scale airport projects from concept to completion.
+    I specialize in managing complex systems, automation, site operations and energy management services. With a strong background 
+    in AI technologies, I focus on enhancing system efficiency, automating processes, and delivering advanced data analytics solutions 
+    to drive innovation and operational excellence.`;
 
     document.getElementById("currentyear").innerHTML = `&copy; ${currentYear} Subin Vasanthan - Portfolio`;
   </script>  

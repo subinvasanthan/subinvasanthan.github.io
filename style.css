@@ -19,13 +19,24 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
+#page1-intheader{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/integration.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 .container{
     padding: 10px 10%;
+}
+.page1-container{
+    padding: 10px 10%;
+    text-align: Center;
 }
 .container .about-col-2 p{
     text-align: justify;
 }
-
 nav{
     display: flex;
     align-items: center;
@@ -53,7 +64,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #D30000;
+    background: #ff0000;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -73,20 +84,35 @@ nav ul li a:hover::after{
 .header-text-pos h1 span{
     color: #ff0000;
 }
+
 .header-text{
     margin-top: 20%;
-    font-size: 30px;
+    font-size: 60px;
 }
+.page1-header-text{
+    margin-top: 15%;
+}
+
 .header-text h1{
     font-size: 60px;
     margin-top: 20px;
 }
+.page1-header-text h1{
+    font-size: 100px;
+    margin-top: 10px;
+}
+
 .header-text h1 span{
     color: #ff0000;
 }
+.page1-header-text h1 span{
+    color: #ff0000c0;
+}
+
 .header-text h1 white{
     color: #ffffff;
 }
+
 .header-text h1 yellow{
     color: #fdf908;
 }
@@ -194,7 +220,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #ff0000;
+    background: #05b1f560;
     transform: translateY(-10px);
 }
 /* -------portfolio----------- */
@@ -221,7 +247,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff0000);
+    background: linear-gradient(rgba(0,0,0,0.6), #066f99);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -355,9 +381,16 @@ nav .fas{
         margin-top: 100%;
         font-size: 16px;
     }
+    .page1-header-text{
+        margin-top: 100%;
+        font-size: 22px;
+    }    
     .header-text h1{
-        font-size: 30px;
+        font-size: 40px;
     }
+    .page1-header-text h1{
+        font-size: 40px;
+    }    
     nav .fas{
         display: block;
         font-size: 25px;
@@ -411,3 +444,16 @@ nav .fas{
     margin-top: -40px;
     display: block;
 }
+
+.home-icon {
+    color: white; /* Adjust color based on your theme */
+    text-decoration: none;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.home-icon i {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+
