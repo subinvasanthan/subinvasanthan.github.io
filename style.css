@@ -38,12 +38,19 @@ body{
 .container{
     padding: 10px 10%;
 }
+.container1{
+    padding: 10px 10%;
+    text-align: justify;
+}
 
 .page1-container{
     padding: 10px 10%;
     text-align: Center;
 }
 .container .about-col-2 p{
+    text-align: justify;
+}
+.container1 .about-col-2 p{
     text-align: justify;
 }
 nav{
@@ -73,7 +80,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff0000;
+    background: #FFD700;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -91,7 +98,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text-pos h1 span{
-    color: #ff0000;
+    color: #FFD700;
 }
 
 .header-text{
@@ -294,7 +301,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #ff0000;
+    color: #FFD700;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -314,7 +321,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #ff0000;
+    border: 1px solid #FFD700;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -336,7 +343,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff0000;
+    color: #FFD700;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -352,12 +359,12 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff0000;
+    color: #FFD700;
     transform: translateY(-5px);
 }
 .btn.btn2{
     display: inline-block;
-    background: #ff0000;
+    background: #039affe7;
 }
 .contact-right form{
     width: 100%;
@@ -388,10 +395,10 @@ form .btn2{
     margin-top: 20px;
 }
 .copyright i{
-    color: #ff0000;
+    color: #FFD700;
 }
 .copyright a{
-    color: #ff0000;
+    color: #FFD700;
     text-decoration: none;
 }
 /* -----------------css for small screens--------- */
@@ -429,7 +436,7 @@ nav .fas{
         font-size: 25px;
     }
     nav ul{
-        background: #ff0000;
+        background: #FFD700;
         position: fixed;
         top: 0;
         right: -200px;

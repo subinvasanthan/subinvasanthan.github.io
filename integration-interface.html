@@ -27,7 +27,7 @@
     </div>
 <!-- ---------Integration and Interfaces---------------- -->
 <div id="services">
-    <div class="container">
+    <div class="container1">
         <h1 class="sub-title">
             <a href="index.html#header" class="home-icon">
                 <i class="fas fa-home"></i>
@@ -40,40 +40,66 @@
         <p><br>Seamless Integration Management is critical for ensuring efficient airport operations by enabling 
         real-time data exchange, system interoperability, and coordinated decision-making.</p>
 
-        <h3><br>Key System Integrations & Message Exchanges</h3>
-        <p><br>Here are some critical airport system integrations and the types of messages exchanged:</p><br>
+        <h2><br>1. Different Integration Methods Between Systems</h2>
+        <p><br>Integration between systems is essential for seamless communication, data sharing, and automation of processes. Various methods exist for integrating systems, each with unique advantages and use cases:</p><br>
         
         <ul>
-            <li><strong>AODB-ATC:</strong><br>
-                <p> Arrival Flight: <i>•	Flight Plan filed from outstation, •Take-off from outstation, • 30 miles out, • Twelve minutes out, • Outer marker, • Touchdown, • On Blocks</i></p>
-                <p>Departure Flight: <i>• Flight Plan filed, • Issuance of TOBT, • Start of boarding, • Aircraft ready, • Start up approval time, • off blocks, • Take off</i></p>
-                <p>Stand Allocation: <i>Publish stand allocations from AMS to ATC</i></p><br>
+            <li><strong>APIs (Application Programming Interfaces)</strong><br>
+                <p>REST APIs: <i>Use HTTP methods (GET, POST, PUT, DELETE) and JSON format for communication. They are stateless and widely used for web services.</i></p>
+                <p>SOAP APIs: <i>Use XML-based messaging protocol with a structured format. Often used in enterprise applications that require security and transaction reliability.</i></p>
+                <p>GraphQL: <i>Allows clients to query specific data they need rather than fetching entire responses. It is flexible and efficient for complex applications.</i></p>
+                <p>Webhooks: <i>Event-driven communication where a system automatically sends real-time data to another system when a specific event occurs.</i></p><br>
             </li>
-            <li><strong>AODB-BHS:</strong><br>
-                <p>Departure Flight: <i>•Flight schedule and flight data updates (AODB to BHS), • Makeup belt allocation (BHS to AODB)</i></p>
-                <p>Arrival Flight: <i>•	Carousel allocation and arrival time (AODB to BHS), • First Bag/Last Bag time (BHS to AODB)</i></p><br>
+            <li><strong>Message Queues</strong><br>
+                <p><i>Systems communicate asynchronously through queues like RabbitMQ, Apache Kafka, or AWS SQS, ensuring data is transferred reliably even if the receiver is temporarily unavailable.</i></p><br>
             </li>
-            <li><strong>AODB-BRS:</strong><br>
-                <p>Departure Flight: <i>•	Flight data (AODB to BRS)</i></p><br>
+            <li><strong>File-Based Integration</strong><br>
+                <p>CSV, JSON, XML File Transfers: <i>Systems share data by exporting and importing structured files via FTP, SFTP, or cloud storage.</i></p>
+                <p>EDI (Electronic Data Interchange): <i>EDI (Electronic Data Interchange): Used in supply chain and financial industries for structured business-to-business (B2B) transactions.</i></p><br>
             </li>
-            <li><strong>AODB-CUPPS:</strong><br>
-                <p>Log In:  <i>• Log in allowed/denied, • Check-in counter allowable usage duration, • Force log off after duration true/false</i></p>
-                <p>Log Out: <i>• Check check-in desk -in agent log out of , • CUPPS sends check-in desk usage details to IIB, • At force log off time – 5 minutes, a warning will be raised to the user, • At force log off time the user will be automatically logged off,  • IIB publishes check-in desk usage details to reporting system</i></p><br>
+            <li><strong>Database-Level Integration</strong><br>
+                <p>Database Replication:  <i>Keeps multiple databases in sync by mirroring data in real-time or periodically.</i></p>
+                <p>ETL (Extract, Transform, Load): <i>Data is extracted from one system, transformed, and loaded into another database or data warehouse.</i></p><br>
             </li>
-            <li><strong>AODB-ERP:</strong><br>
-                <p> Monthly Billing Run: Eg: <i>• Departure Billable Pax, • Landing Charge, • Parking Charge, • Departing Pax Charge, • CUPPS Charge, • Fuel Standby Charge, • GPU Charge, • PCA Charge, • GSE Charge</i></p><br>
+            <li><strong>Enterprise Service Bus (ESB)</strong><br>
+                <p><i>A middleware solution that enables communication between various applications and services in a distributed architecture.</i></p><br>
             </li>
-            <li><strong>AODB-FIDS:</strong><br>
-               <p> Departure Flight: <i>• Flight schedule (AODB to FIDS), • Resource allocations (RMS to FIDS), •Flight data update (AODB to FIDS), • Gate status updates (FIDS to AODB)</i></p>
-               <p> Arrival Flight: <i>•	 Flight schedule (AODB to FIDS), • Flight data (AODB to FIDS), • Flight data (FIDS to AODB)</i></p><br>
-            </li>
-            <li><strong>AODB-FMS:</strong><br>
-               <p> Ad-Hoc & Scheduled Resource Downgrade: <i>• Parking Stand, • Boarding Gate, • Reclaim Carousel</i></p><br>
+            <li><strong>Cloud-Based Integration Platforms</strong><br>
+               <p> iPaaS (Integration Platform as a Service): <i>Platforms like Make.com, Zapier, and MuleSoft provide no-code or low-code integration solutions.</i></p><br>
             </li>                     
         </ul>
 
+        <h2><br>2. How Integration Helps to Achieve Combined Tasks</h2>
+        <p><br>System integration enables multiple applications to work together, streamlining processes, improving efficiency, and ensuring data consistency. Below are some ways integration contributes to achieving combined tasks:</p><br>
+        <ul>
+            <li><strong>Automated Workflows: </strong>Integration allows different systems (CRM, ERP, HRMS) to exchange data automatically, reducing manual intervention.<br></li>
+            <li><strong>Real-Time Data Synchronization: </strong>Ensures that the latest data is available across all connected systems, minimizing data inconsistencies.<br></li>  
+            <li><strong>Enhanced Customer Experience: </strong>Integrated systems enable seamless customer interactions, such as syncing online orders with inventory and logistics systems.<br></li>
+            <li><strong>Data-Driven Decision Making: </strong>Integrated systems provide centralized access to data, enabling better analytics and business intelligence.<br></li> 
+            <li><strong>Improved Efficiency: </strong>Automating inter-system communications saves time and reduces operational costs.<br></li>                
+        </ul>
+
+        <h2><br>3. Importance of Queuing Systems</h2>
+        <p><br>Message queuing systems play a crucial role in handling communication between applications in a scalable and reliable manner. Some of their key benefits include:</p><br>
+        <ul>
+            <li><strong>Decoupling of Systems: </strong>Queues enable independent scaling of components, allowing them to process data at different speeds without dependency.<br></li>
+            <li><strong>Reliability and Fault Tolerance:  </strong>Ensures that messages are not lost if a system goes down. The message remains in the queue until it is processed successfully.<br></li>  
+            <li><strong>Load Balancing: </strong>Distributes workload efficiently across multiple consumers, preventing overload on a single system.<br></li>
+            <li><strong>Asynchronous Processing: </strong>Allows tasks to be processed in the background without delaying the main application.<br></li> 
+            <li><strong>Guaranteed Message Delivery: </strong>Many queuing systems provide mechanisms like retries and acknowledgments to ensure data integrity.<br></li>                
+        </ul>
+        <p><br>Examples of queuing systems include:</p><br>
+        <ul>
+            <li><strong>RabbitMQ: </strong>Best for traditional message queuing and supports multiple messaging patterns.<br></li>
+            <li><strong>Apache Kafka: </strong>Ideal for high-throughput event streaming and real-time data processing.<br></li> 
+            <li><strong>Amazon SQS: </strong>A fully managed queue service for cloud-based applications.<br><br><br></li>                
+        </ul>
+
+
+
+
     </div>
-    <div class="container">
+    <div class="container1">
         <h1 class="sub-title">
             <a href="index.html#header" class="home-icon">
                 <i class="fas fa-home"></i>
@@ -83,28 +109,27 @@
             </a>
             Interface Management
         </h1>
-        <p><br>Effective interface management is essential for defining roles, responsibilities, and system boundaries across different stakeholders in projects. Proper interface documentation ensures clear accountability and prevents integration issues during system deployment.</p>
+        <p><br>Interface management is critical for ensuring smooth coordination between mechanical, electrical, and civil engineering disciplines in large-scale projects. Proper interface management ensures that different systems function together without conflicts and that all physical connections and interactions are well-defined.</p>
+        <p><br>Effective documentation is essential to track responsibilities, resolve conflicts, and ensure compliance between different engineering disciplines. Key interface documents include:</p><br>
 
-        <h3><br>Stakeholder Involvement in Interface Documentation</h3>
-        <p><br>Interface management is not just limited to IT and software integration—it also plays a critical role in coordinating mechanical, electrical, civil, and structural engineering disciplines.</p><br>
-        
         <ul>
-            <li><strong>Mechanical Systems:</strong><br>
-                <p><i>•	Integration of baggage handling systems (BHS), passenger boarding bridges (PLB), and HVAC controls with automation platforms.</i></p>
-                <p><i>• Mechanical interface documents define control sequences, sensor feedback loops, and automation triggers</i></p><br>
+            <li><strong>Combined Drawings: </strong>
+                <p><i>Represent how mechanical, electrical, and civil elements interact within a project, preventing conflicts during construction.</i></p><br>
             </li>
-            <li><strong>Electrical Systems:</strong><br>
-                <p><i>•	Coordination of power requirements, UPS integration, and energy metering with building management systems (BMS).</i></p>
-                <p><i>• Interface agreements ensure proper electrical load distribution, redundancy planning, and fault monitoring</i></p><br>
+            <li><strong>Interface Control Documents (ICDs) </strong>
+                <p><i>Define technical and operational boundaries between different systems or disciplines, specifying responsibilities for each party.</i></p><br>
+            </li> 
+            <li><strong>Sign-Offs on Shared Documents: </strong>
+                <p><i>Ensure that all involved parties agree on the interface responsibilities and acknowledge any design changes or modifications.</i></p><br>
             </li>
-            <li><strong>Civil:</strong><br>
-                <p><i>•	Defining physical installation locations for sensors, cameras, VDGS, and access control systems.</i></p>
-                <p><i>• Interface agreements clarify mounting specifications, infrastructure support, and compliance with safety regulations</i></p><br>
-            </li>            
+            <li><strong>Responsibility Matrix: </strong>
+                <p><i>Assigns clear ownership to each engineering discipline for specific interface elements, minimizing accountability issues.</i></p><br>
+            </li>          
         </ul>
+        <p>By maintaining thorough documentation and clear communication between teams, interface management ensures that integrated systems function seamlessly and efficiently in a project.</p><br>
 
     </div>   
-    <div class="container">
+    <div class="container1">
         <a href="index.html#header" class="home-icon">
             <i class="fas fa-home"></i>
         </a>
