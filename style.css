@@ -7,6 +7,12 @@
 html{
     scroll-behavior: smooth;
 }
+hr {
+    border: 1px solid #ccc; /* Adjust color and thickness */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 body{
     background: #080808;
     color: #fff;
@@ -28,6 +34,14 @@ body{
     background-attachment: fixed;
 }
 #page2-intheader{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/configuration.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#page3-intheader{
     width: 100%;
     height: 100vh;
     background-image: url(images/configuration.webp);
@@ -337,18 +351,20 @@ nav ul li a:hover::after{
     height: 100%;
 }
 .btn{
+    background-color: #00BFFF; /* Electric Blue */
+    padding: 10px 20px;
     display: block;
-    margin: 50px auto;
+    margin: 10px auto;
     width: fit-content;
-    border: 1px solid #FFD700;
+    border: none;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: white; /* Text color */
     transition: background 0.5s;
 }
 .btn:hover{
-    background: #ff0000;
+    background: #0080FF
 }
 
 /* ---------contact-------- */
@@ -497,6 +513,11 @@ nav .fas{
     .copyright{
         font-size: 14px;
     }
+
+
+
+
+
 }
 #msg{
     color: #61b752;

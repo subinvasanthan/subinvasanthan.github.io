@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Recognition and Video Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/bd7585b95f.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div id="page3-intheader">
+        <div class="page1-container">
+            <nav>
+                <img src="images/logo.webp" class="logo">
+                <!-- Link to main page using Font Awesome icon -->
+
+            </nav>
+            <div class="page1-header-text">
+                <h1><span>Facial Recognition</span><br>&<br>Video Analytics<br></h1><br>
+                <a href="index.html#header" class="home-icon">
+                    <i class="fas fa-home"></i> <!-- Home icon -->
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- ---------Integration and Interfaces---------------- -->
+<div id="services">
+    <div class="container1">
+        <h1 class="sub-title">
+            <a href="index.html#header" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="fr-va.html" class="home-icon">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+            Face Recognition <hr>
+        </h1>
+        <p><br><span style="color: silver;"> Facial recognition technology plays a significant role in various industries, from enhancing security to improving customer experiences. 
+            Here's a breakdown of its use cases and considerations:</span></p><br>
+
+        <ul>
+            <li><strong>Door Entry Systems with Card Swipes and Face Recognition: </strong><span style="color: silver;">In systems where card swipes are followed by facial recognition, the matching score may be lower. This is because the system needs to recognize faces with varying angles, lighting, and facial expressions, which can result in a less precise match when combined with card-based identification.</span></li>
+            <br>
+            <li><strong>Wanted Persons Detection: </strong><span style="color: silver;">For applications like identifying wanted persons, the matching score can also be lower. In these cases, it's crucial not to miss any person, so the system often adopts a lower threshold, accepting a match even if it's not highly confident. This approach helps ensure no person is overlooked.</span></li>     
+            <br>
+            <li><strong>Customer Profiling in Retail: </strong><span style="color: silver;">When a customer enters a store, face recognition helps retrieve their details, enabling personalized experiences. Here, the matching score must be higher to avoid misidentifying customers. It's crucial to ensure that only valid matches are accepted. For more accurate identification, the person's face should be straight (not tilted), so systems should incorporate tilt checks to improve the recognition accuracy.</span></li>
+            <br>
+            <li><strong>Fake Face Detection: </strong><span style="color: silver;"> In some scenarios, a person may try to use a photo or video to impersonate another. To address this, facial recognition systems should allow for the identification of fake faces. This can be done by detecting the difference between a real face and a picture, using methods like liveness detection.</span></li>       
+            <br>
+            <li><strong>Faster Matching with Faiss: </strong><span style="color: silver;">For real-time applications requiring fast face matching, using vector databases like Faiss can significantly speed up the process. Faiss enables efficient retrieval of face embeddings, making it easier to match a person's face against a large database quickly.</span></li>
+            <br>
+            <li><strong>Face Detection: </strong><span style="color: silver;">The first step in facial recognition is detecting the face in an image or video stream. Using methods like Haar cascades for initial face detection, followed by more advanced techniques (such as deep learning-based detectors) for verification, helps ensure accurate face detection and recognition.</span></li>     
+            <br>
+            <li><strong>Various Face Recognition Methods: </strong><span style="color: silver;">Multiple face recognition algorithms exist, ranging from traditional methods like Eigenfaces and Fisherfaces to more advanced approaches using deep learning, such as FaceNet, DeepFace, and Dlib. These methods differ in accuracy, speed, and suitability for different applications.</span></li>
+            <br>
+            <li><strong>Industries Using Facial Recognition: </strong><span style="color: silver;">Facial recognition technology finds applications across various industries:</span>
+                <ul style="margin-left: 20px;">
+                    <li><strong>Security:  </strong><span style="color: silver;">Airports, government buildings, and private properties use it for access control and surveillance.</span></li>
+                    <li><strong>Retail:  </strong><span style="color: silver;">For customer profiling, personalized recommendations, and improved shopping experiences.</span></li>
+                    <li><strong>Healthcare:  </strong><span style="color: silver;">Patient identification and medical record retrieval.</span></li>
+                    <li><strong>Banking:  </strong><span style="color: silver;">Secure access to accounts and authentication for transactions.</span></li>
+                    <li><strong>Law Enforcement:  </strong><span style="color: silver;">For identifying suspects and solving crimes.</span></li>
+                    <li><strong>Marketing:  </strong><span style="color: silver;">Analyzing customer demographics and behavior in stores or public spaces.</span></li>
+                </ul>
+            </li>      
+        </ul>
+
+
+
+
+
+    </div>
+    <div class="container1">
+        <h1 class="sub-title">
+            <a href="index.html#header" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="fr-va.html" class="home-icon">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a> 
+            Video Analytics<hr>
+        </h1>
+        <p><br><span style="color: silver;">Video analytics uses advanced algorithms to analyze video data in real-time, providing actionable insights for various use cases. Here's an overview of some key applications:</span></p>
+        <br>
+        <ul>
+            <li><strong>Baggage Detection in Airports: </strong><span style="color: silver;">In an airport, if a person leaves their baggage unattended for a certain period, video analytics can trigger an alarm. Similarly, it can detect loitering behavior, such as someone staying in a restricted area for too long, and can raise an alert to security.</span></li>
+            <br>
+            <li><strong>Crowd Detection and Queuing: </strong><span style="color: silver;">Video analytics can help monitor crowd behavior, particularly in places like airports, shopping malls, and events. For instance, it can analyze the flow of people to detect overcrowding in queues, ensuring that crowd control measures are implemented effectively.</span></li>     
+            <br>
+            <li><strong>Aircraft Turnaround Analytics: </strong><span style="color: silver;">Video analytics can be applied to monitor aircraft turnaround processes, ensuring timely boarding and deboarding. It can detect issues such as delays, blocked paths, or improper loading/unloading of cargo, helping improve operational efficiency.</span></li>
+            <br>
+            <li><strong>Various Other Use Cases: </strong><span style="color: silver;">Video analytics also applies to a wide range of use cases, such as:</span>
+                <ul style="margin-left: 20px;">
+                    <li><strong>Smart Cities:  </strong><span style="color: silver;">Detecting traffic violations, monitoring parking spaces, and analyzing public areas for security.</span></li>
+                    <li><strong>Retail:   </strong><span style="color: silver;">Analyzing shopper behavior, tracking foot traffic, and optimizing store layouts.</span></li>
+                    <li><strong>Manufacturing:  </strong><span style="color: silver;">Monitoring production lines for efficiency and safety hazards.</span></li>
+                    <li><strong>Education:  </strong><span style="color: silver;">Enhancing campus security and monitoring attendance.</span></li>
+                </ul>
+            </li> 
+            <br>
+            <li><strong>How Analytics Helps in Daily Life: </strong><span style="color: silver;">Video analytics plays a significant role in improving safety, convenience, and efficiency in daily life. For example, surveillance systems in public places help ensure security, while smart city technologies optimize traffic flow and energy usage. In retail, analytics can personalize the shopping experience, and in airports, it can speed up the check-in and boarding processes. In essence, video analytics contributes to making public spaces safer, businesses more efficient, and human interactions more streamlined.</span></li>
+            <br>     
+        </ul>
+
+        <p><span style="color: silver;">Both facial recognition and video analytics are transforming industries by providing smarter, more efficient solutions for security, operations, and customer experience.</span></p><br>
+
+    </div>   
+    <div class="container1">
+        <a href="index.html#header" class="home-icon">
+            <i class="fas fa-home"></i>
+        </a>
+        <a href="fr-va.html" class="home-icon">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a> <br><br>
+        <span style="color: silver;">Home Top</span>
+    </div>    
+</div>
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+
