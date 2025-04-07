@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analytics</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/bd7585b95f.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div id="page1-intheader">
+        <div class="page1-container">
+            <nav>
+                <a href="index.html#header">
+                    <img src="images/logo.webp" class="logo">
+                  </a>
+                <!-- Link to main page using Font Awesome icon -->
+
+            </nav>
+            <div class="page1-header-text">
+                <h1><span>Data</span><br>Analytics<br></h1><br>
+                <a href="index.html#header" class="home-icon">
+                    <i class="fas fa-home"></i> <!-- Home icon -->
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- ---------Integration and Interfaces---------------- -->
+<div id="services">
+    <div class="container1">
+        <h1 class="sub-title">
+            <a href="index.html#header" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="data-anal.html" class="home-icon">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+            Data Analytics Experience in Airport Operations<hr>
+        </h1>
+        <p><br><span style="color: silver;">In my role as a data analytics professional, I have worked extensively on systems that support digital transformation 
+            in airport environments. My experience involves turning complex, multi-source operational data into actionable insights that drive efficiency, improve 
+            passenger experiences, and support real-time decision-making.</span></p>
+
+        <h2 style="text-align: left;"><br>Key Highlights:</h2><br>
+
+        <ul>
+            <li><strong>Real-Time Data Integration:</strong><br><br>
+                <p><span style="color: silver;">Hands-on experience in designing data pipelines that ingest and process live data from a wide range of airport subsystems, 
+                    including flight information displays, passenger tracking, baggage systems, and terminal operations. Real-time ingestion was managed using Apache Kafka to 
+                    ensure low-latency, high-throughput data delivery.</span></p><br>
+            </li>
+            <li><strong>Data Warehousing & Storage Architecture:</strong><br><br>
+                <p><span style="color: silver;">Worked with high-performance analytics databases like ClickHouse for large-scale data analysis and MariaDB for transactional 
+                    and reference data, enabling a hybrid approach to data storage that supports both real-time insights and historical trend analysis.</span></p><br>
+            </li>      
+            <li><strong>Interactive Dashboards & Visualizations:</strong><br><br>
+                <p><span style="color: silver;">Delivered intuitive, role-based dashboards to support operational teams and management. These visualizations covered key performance 
+                    indicators such as on-time performance, gate occupancy, passenger flow analytics, and more — enabling timely, data-driven decisions in dynamic airport environments.</span></p><br>
+            </li> 
+            <li><strong>Automated and Customized Reporting:</strong><br><br>
+                <p><span style="color: silver;">Designed automated reporting pipelines that generate and distribute custom-built reports to multiple stakeholders at 
+                    scheduled intervals. These reports helped reduce manual reporting effort and ensured timely dissemination of critical metrics.</span></p><br>
+            </li> 
+            <li><strong>End-to-End Data Pipeline Collaboration:</strong><br><br>
+                <p><span style="color: silver;">Worked collaboratively with in-house backend and frontend teams to develop fully customized interfaces and reporting systems, 
+                    tailored to the specific needs of airport stakeholders.</span></p><br>
+            </li> 
+            <li><strong>Web-Based Access and Data Governance:</strong><br><br>
+                <p><span style="color: silver;">Supported the implementation of secure, web-based portals for dashboard access and report management, 
+                    with role-based authentication and user control.</span></p><br>
+            </li>    
+            <li><strong>Scalable Deployment with Kubernetes:</strong><br><br>
+                <p><span style="color: silver;">The entire analytics infrastructure was containerized and orchestrated using Kubernetes, allowing seamless scaling,
+                     modularity, and resilience across environments.</span></p>
+            </li>            
+        </ul>
+        <br><br>
+        <hr>
+        <br>
+        <p><span style="color: silver;">This experience has deepened my expertise in real-time analytics, data pipeline engineering, and visual storytelling with data, 
+            particularly in high-impact, mission-critical domains such as airport operations. I bring a strong blend of technical skills and business understanding to ensure that complex data is translated into meaningful insights for decision-makers.</span></p><br>
+
+        <hr>
+
+
+
+
+
+    </div>
+  
+    <div class="container1">
+        <a href="index.html#header" class="home-icon">
+            <i class="fas fa-home"></i>
+        </a>
+        <a href="data-anal.html" class="home-icon">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a> <br><br>
+        <span style="color: silver;">Home Top</span>
+    </div>    
+</div>
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+
