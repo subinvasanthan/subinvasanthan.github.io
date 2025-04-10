@@ -289,7 +289,7 @@
     
     let planes = [];
     
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 6; i++) {
       planes.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -332,8 +332,8 @@
         }
     
         plane.angle = angle;
-        plane.x += Math.cos(angle) * plane.speed * 1.5;
-        plane.y += Math.sin(angle) * plane.speed * 1.5;
+        plane.x += Math.cos(angle) * plane.speed * 1;
+        plane.y += Math.sin(angle) * plane.speed * 1;
     
         // Wrap around screen edges
         if (plane.x < 0) plane.x = canvas.width;
