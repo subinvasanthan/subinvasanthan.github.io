@@ -168,8 +168,8 @@
     let idleThreshold = 3000; // 3 seconds
     
     let planes = [];
-    
-    for (let i = 0; i < 20; i++) {
+    // for the below the original value was 20, ut now i changed to 10 for best view in mobile
+    for (let i = 0; i < 10; i++) { 
       planes.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -212,8 +212,8 @@
         }
     
         plane.angle = angle;
-        plane.x += Math.cos(angle) * plane.speed * 1.5;
-        plane.y += Math.sin(angle) * plane.speed * 1.5;
+        plane.x += Math.cos(angle) * plane.speed * 1; // original value was 1.5
+        plane.y += Math.sin(angle) * plane.speed * 1; // original value was 1.5
     
         // Wrap around screen edges
         if (plane.x < 0) plane.x = canvas.width;
@@ -236,6 +236,7 @@
       animate();
     };
     </script>
+
 
 
 
