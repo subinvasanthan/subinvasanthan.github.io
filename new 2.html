@@ -1,118 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flying Paper Planes</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #111;
-    }
-    canvas {
-      display: block;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Code Comparison</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #444;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+        }
+        td {
+            background-color: #1e1e1e;
+        }
+        pre {
+            background-color: #1e1e1e;
+            color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-	<canvas id="planeCanvas" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;"></canvas>
-
-	<script>
-	const canvas = document.getElementById("planeCanvas");
-	const ctx = canvas.getContext("2d");
-	
-	canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight;
-	
-	window.addEventListener("resize", () => {
-	  canvas.width = window.innerWidth;
-	  canvas.height = window.innerHeight;
-	});
-	
-	// Set your image URL here
-	const planeImage = new Image();
-	planeImage.src = '/images/paperplane.svg'; // Replace with the actual image path
-
-	//const paperPlaneSrc = "data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjNGI5MGUyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAxMS41bDE4LjY1LTEwLjMzYy4zNi0uMi44Mi4xLjgzLjU0bC4wMSAxOC41MWMwIC40Mi0uNDYgLjctLjg2LjU1TDE0IDE2bC0xLjc5IDYuMTZhLjY2LjY2IDAgMDEtMS4yNi4wMkw5IDE2bC02LjI4LjM0Yy0uNDIuMDItLjcxLS40My0uNTItLjgzTDIgMTEuNXoiLz48L3N2Zz4=";
-	//const planeImage = new Image();
-	//planeImage.src = paperPlaneSrc;
-	
-	let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
-	let isMouseIdle = false;
-	let lastMouseMove = Date.now();
-	let idleThreshold = 3000; // 3 seconds
-	
-	let planes = [];
-	
-	for (let i = 0; i < 20; i++) {
-	  planes.push({
-		x: Math.random() * canvas.width,
-		y: Math.random() * canvas.height,
-		size: 20 + Math.random() * 10,
-		speed: 1 + Math.random() * 2,
-		angle: Math.random() * Math.PI * 2,
-		idleDir: Math.random() * Math.PI * 2,
-	  });
-	}
-	
-	// Track mouse activity
-	document.addEventListener("mousemove", (e) => {
-	  mouse.x = e.clientX;
-	  mouse.y = e.clientY;
-	  lastMouseMove = Date.now();
-	  isMouseIdle = false;
-	});
-	
-	// Periodically check for idle
-	setInterval(() => {
-	  isMouseIdle = Date.now() - lastMouseMove > idleThreshold;
-	}, 500);
-	
-	function animate() {
-	  ctx.clearRect(0, 0, canvas.width, canvas.height);
-	
-	  planes.forEach((plane) => {
-		let angle;
-	
-		if (isMouseIdle) {
-		  // Float in a random-ish direction
-		  plane.idleDir += (Math.random() - 0.5) * 0.1; // add wiggle
-		  angle = plane.idleDir;
-		} else {
-		  // Move toward mouse
-		  const dx = mouse.x - plane.x;
-		  const dy = mouse.y - plane.y;
-		  angle = Math.atan2(dy, dx);
-		  plane.idleDir = angle; // update idle direction to match current flight path
-		}
-	
-		plane.angle = angle;
-		plane.x += Math.cos(angle) * plane.speed * 1.5;
-		plane.y += Math.sin(angle) * plane.speed * 1.5;
-	
-		// Wrap around screen edges
-		if (plane.x < 0) plane.x = canvas.width;
-		if (plane.x > canvas.width) plane.x = 0;
-		if (plane.y < 0) plane.y = canvas.height;
-		if (plane.y > canvas.height) plane.y = 0;
-	
-		// Draw the plane (leaner and rotated)
-		ctx.save();
-		ctx.translate(plane.x, plane.y);
-		ctx.rotate(angle);
-		ctx.drawImage(planeImage, -plane.size / 2, -plane.size / 2, plane.size * 1.5, plane.size * 0.6);  // Lean effect: make it longer and thinner
-		ctx.restore();
-	  });
-	
-	  requestAnimationFrame(animate);
-	}
-	
-	// Ensure image is loaded before starting animation
-	planeImage.onload = () => {
-	  animate();
-	};
-	</script>
+    <h1>Machine Learning Code Comparison: TensorFlow, PyTorch, and Scikit-learn</h1>
+    <table>
+        <tr>
+            <th>Step/Method</th>
+            <th>TensorFlow</th>
+            <th>PyTorch</th>
+            <th>Scikit-learn</th>
+            <th>Explanation</th>
+        </tr>
+        <tr>
+            <td><strong>Problem Statement</strong></td>
+            <td>
+                TensorFlow is used for building deep learning models, especially in complex tasks like image recognition. TensorFlow provides an end-to-end platform for ML applications.
+            </td>
+            <td>
+                PyTorch is known for its flexibility and dynamic computation graph, ideal for research and complex model building.
+            </td>
+            <td>
+                Scikit-learn is used for more traditional machine learning models like decision trees, regression, and clustering, suitable for smaller-scale problems.
+            </td>
+            <td>
+                **Problem Statement**: The problem we aim to solve is recognizing patterns in data (e.g., images or tabular data) using different machine learning frameworks, each suited to specific use cases.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>1. Load and Preprocess Data</strong></td>
+            <td>
+                <pre>
+from tensorflow.keras.datasets import mnist
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+x_train, x_test = x_train / 255.0, x_test / 255.0
+                </pre>
+            </td>
+            <td>
+                <pre>
+import torch
+from torchvision import datasets, transforms
+transform = transforms.ToTensor()
+train_data = datasets.MNIST(root='./data', train=True, transform=transform, download=True)
+                </pre>
+            </td>
+            <td>
+                <pre>
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+iris = load_iris()
+X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.2)
+                </pre>
+            </td>
+            <td>
+                **Load Data**: This step loads the dataset and prepares it for training by splitting it into training and testing datasets. <br> **Preprocessing**: Normalize or transform the data to make it compatible with the model.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>2. Define the Model</strong></td>
+            <td>
+                <pre>
+import tensorflow as tf
+model = tf.keras.Sequential([
+    tf.keras.layers.Flatten(input_shape=(28, 28)),
+    tf.keras.layers.Dense(128, activation='relu'),
+    tf.keras.layers.Dense(10, activation='softmax')
+])
+                </pre>
+            </td>
+            <td>
+                <pre>
+import torch.nn as nn
+class SimpleNet(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.fc1 = nn.Linear(28*28, 128)
+        self.fc2 = nn.Linear(128, 10)
+    def forward(self, x):
+        x = x.view(-1, 28*28)  # Flatten
+        x = torch.relu(self.fc1(x))
+        return self.fc2(x)
+                </pre>
+            </td>
+            <td>
+                <pre>
+from sklearn.tree import DecisionTreeClassifier
+clf = DecisionTreeClassifier()
+                </pre>
+            </td>
+            <td>
+                **Define Model**: Each framework uses different methods to define a model. TensorFlow uses a Sequential API for layers, PyTorch uses custom-defined models with classes, and Scikit-learn provides pre-built classifiers like DecisionTree.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>3. Train the Model</strong></td>
+            <td>
+                <pre>
+model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
+model.fit(x_train, y_train, epochs=5)
+                </pre>
+            </td>
+            <td>
+                <pre>
+import torch.optim as optim
+optimizer = optim.Adam(model.parameters(), lr=0.001)
+loss_fn = nn.CrossEntropyLoss()
+for images, labels in train_loader:
+    optimizer.zero_grad()
+    outputs = model(images)
+    loss = loss_fn(outputs, labels)
+    loss.backward()
+    optimizer.step()
+                </pre>
+            </td>
+            <td>
+                <pre>
+clf.fit(X_train, y_train)
+                </pre>
+            </td>
+            <td>
+                **Train Model**: Training involves feeding data into the model and adjusting weights to minimize the error. TensorFlow uses `fit()`, PyTorch uses a manual training loop with backpropagation, and Scikit-learn trains the model with the `fit()` method.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>4. Evaluate the Model</strong></td>
+            <td>
+                <pre>
+model.evaluate(x_test, y_test)
+                </pre>
+            </td>
+            <td>
+                <pre>
+predictions = model(X_test)
+# Accuracy computation code (could use sklearn.metrics)
+                </pre>
+            </td>
+            <td>
+                <pre>
+from sklearn.metrics import accuracy_score
+predictions = clf.predict(X_test)
+print("Accuracy:", accuracy_score(y_test, predictions))
+                </pre>
+            </td>
+            <td>
+                **Evaluate Model**: After training, the model is evaluated using test data to assess its performance. TensorFlow uses `evaluate()`, PyTorch predicts outputs and calculates accuracy manually, and Scikit-learn uses the `predict()` method followed by metrics like accuracy.
+            </td>
+        </tr>
+        <tr>
+            <td><strong>5. Code Explanation</strong></td>
+            <td>
+                At the end of this code, the model is trained to predict handwritten digits (0-9) from images using a neural network.
+            </td>
+            <td>
+                At the end of this code, the model is trained to predict handwritten digits (0-9) from images using a custom neural network.
+            </td>
+            <td>
+                At the end of this code, the DecisionTree model is trained to predict the species of iris flowers based on input features.
+            </td>
+            <td>
+                **Summary**: Each code trains a model on a dataset (MNIST for TensorFlow and PyTorch, Iris for Scikit-learn) and uses it to make predictions on unseen data, providing accuracy as a measure of performance.
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
