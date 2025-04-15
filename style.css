@@ -89,6 +89,42 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
+#page9-intheader{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/python.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#page10-intheader{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/llm.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Tabel styling */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #C0C0C0; /* Silver text */
+  }
+  th, td {
+    border: 1px solid #3b3939; /* Grey borders */
+    padding: 10px;
+    text-align: left;
+  }
+  thead {
+    background-color: #444242; /* Grey header background */
+    color: #C0C0C0; /* Black text in header for contrast */
+  }
+
+
+
 /* Custom styling for the hr tag to make it thicker */
 hr.thin-line {
     border: 0;

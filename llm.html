@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/bd7585b95f.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <div id="page10-intheader">
+        <div class="page1-container">
+            <nav>
+                <a href="index.html#header">
+                    <img src="images/logo.webp" class="logo">
+                  </a>
+                <!-- Link to main page using Font Awesome icon -->
+
+            </nav>
+            <div class="page1-header-text">
+                <h1><span>LLMs </span><br>Large Language Model<br></h1><br>
+                <a href="index.html#header" class="home-icon">
+                    <i class="fas fa-home"></i> <!-- Home icon -->
+                </a>
+            </div>
+        </div>
+    </div>
+<!-- ---------llm---------------- -->
+<div id="services">
+
+    <div class="container1">
+        <h1 class="sub-title">
+            <a href="index.html#header" class="home-icon">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="llm.html" class="home-icon">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+            🧠 What is an LLM?<hr>
+        </h1>
+        <p><br><span style="color: silver;">A Large Language Model (LLM) is an artificial intelligence model trained to understand and generate human-like text. 
+            It processes language by predicting the next word in a sequence, enabling it to carry out tasks like answering questions, summarizing content, and even writing code.</span></p>
+  
+        <hr class="thin-line">
+        <h2 style="text-align: left;">🎯 How Were LLMs Originally Built?<hr class="thin-line"></h2>
+        <p><span style="color: silver;">LLMs are trained on massive datasets containing text from books, websites, articles, and conversations to learn grammar, facts, 
+            reasoning, and context. During training, the model learns patterns in language by adjusting billions of internal parameters using techniques like 
+            supervised learning and self-attention mechanisms. The transformer architecture, introduced by Google in 2017, became the foundation for most modern 
+            LLMs due to its ability to handle long-range dependencies in text efficiently. This allowed models to scale up in size and capabilities, resulting in increasingly 
+            human-like performance.</span></p>
+
+        <hr class="thin-line">
+        <h2 style="text-align: left;">📌 Popular LLMs in the Market<hr class="thin-line"></h2>
+        <p><span style="color: silver;">Some of the leading LLMs today include OpenAI's GPT series, Google's Gemini, Anthropic's Claude, and Meta's LLaMA.</span></p>
+
+        <hr class="thin-line">
+        <h2 style="text-align: left;">🔍 LLMS and Prompting Techniques<hr class="thin-line"></h2>
+        <p><span style="color: silver;">Prompting refers to how we craft our input text to get the best possible response from an LLM. Basic prompting involves asking clear, 
+            specific questions, but more advanced techniques include zero-shot, few-shot, and chain-of-thought prompting, which help guide the model’s reasoning process. 
+            System prompts can also set the LLM’s behavior or tone, while retrieval-augmented generation (RAG) integrates external knowledge for more accurate outputs.</span></p>
+
+
+            <p><br>
+                <span style="color: silver;">
+                    THe below table outlines a few prompting techniques and their use cases.
+                </span>
+            </p>
+
+
+            <table>
+                <thead>
+                  <tr>
+                    <th>Prompting Method</th>
+                    <th>Best Use Cases</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Zero-Shot Prompting</td>
+                    <td>Text summarization, translation, and simple question answering, especially when limited task-specific data is available.</td>
+                  </tr>
+                  <tr>
+                    <td>Few-Shot Prompting</td>
+                    <td>Tasks requiring more complex reasoning or domain-specific knowledge, where a few examples can guide the model's understanding.</td>
+                  </tr>
+                  <tr>
+                    <td>Chain-of-Thought Prompting</td>
+                    <td>Complex reasoning tasks, problem-solving, and tasks requiring step-by-step explanations.</td>
+                  </tr>
+                  <tr>
+                    <td>Role-Based Prompting</td>
+                    <td>Simulating conversations, generating creative content, and tasks where adopting a specific persona is beneficial.</td>
+                  </tr>
+                  <tr>
+                    <td>Markdown Prompting</td>
+                    <td>Generating structured outputs like lists, tables, and code, and improving the organization and readability of responses.</td>
+                  </tr>
+                  <tr>
+                    <td>Emotional & Style Prompting</td>
+                    <td>Creative writing, generating different tones of text, and tasks where conveying specific emotions or styles is important.</td>
+                  </tr>
+                  <tr>
+                    <td>Rephrase and Respond Prompting</td>
+                    <td>Clarifying ambiguous queries, handling complex questions, and ensuring the model understands the user’s intent.</td>
+                  </tr>
+                  <tr>
+                    <td>System 2 Attention</td>
+                    <td>Tasks requiring deliberate and focused reasoning, problem-solving, and avoiding impulsive or intuitive responses.</td>
+                  </tr>
+                  <tr>
+                    <td>Generated Knowledge Prompting</td>
+                    <td>Incorporating external knowledge or information into prompts, improving accuracy and factual correctness.</td>
+                  </tr>
+                  <tr>
+                    <td>Least-to-Most Prompting</td>
+                    <td>Breaking down complex tasks into simpler subtasks, guiding the model through a step-by-step process.</td>
+                  </tr>
+                  <tr>
+                    <td>SimTom Prompting</td>
+                    <td>Generating diverse and creative outputs, exploring different perspectives, and tasks where originality is desired.</td>
+                  </tr>
+                  <tr>
+                    <td>Remove Bias Prompting</td>
+                    <td>Mitigating biases in language models, promoting fairness and inclusivity, and generating more objective and unbiased responses.</td>
+                  </tr>
+                  <tr>
+                    <td>Tabular Chain-of-Thought</td>
+                    <td>Organizing complex reasoning in a structured tabular format for clarity in multi-step processes.</td>
+                  </tr>
+                  <tr>
+                    <td>Skeleton of Thought</td>
+                    <td>Creating a framework for problem-solving that allows for parallel elaboration on each point for efficiency.</td>
+                  </tr>
+                  <tr>
+                    <td>Self-Generated In-Context Learning</td>
+                    <td>Generating examples for in-context learning from the model itself to reduce reliance on external data.</td>
+                  </tr>
+                  <tr>
+                    <td>DiVeRSe (Diverse Verifier on Reasoning Steps)</td>
+                    <td>Using multiple prompts to generate diverse answers while verifying reasoning steps for improved reliability.</td>
+                  </tr>
+                  <tr>
+                    <td>CO-STAR Framework</td>
+                    <td>Structuring prompts by defining context, objectives, style, tone, audience, and response format for optimal results.</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <br>
+              <hr class="thin-line">
+    </div> 
+
+    <div class="container3">
+        <div class="row">
+            <div class="about-col-i">
+                <img src="images/rag.webp">
+            </div>
+
+
+            <div class="about-col-l">
+                <h2 class="sub-title-l">
+                    <a href="index.html#header" class="home-icon">
+                        <i class="fas fa-home"></i>
+                    </a>
+                    <a href="llm.html" class="home-icon">
+                        <i class="fa-solid fa-arrow-up"></i>
+                    </a> 
+                    📌 Retrieval-Augmented Generation (RAG) and LLMs<hr>
+                </h2>
+                <br>
+
+
+                <p><br><span style="color: silver;">Retrieval-Augmented Generation (RAG) is a technique that enhances LLMs by allowing them to access external 
+                    information sources—like documents, databases, or search engines—before generating a response. Instead of relying solely on what the model 
+                    learned during training (which has limitations and a fixed knowledge cutoff), RAG retrieves relevant information in real time and feeds it 
+                    into the model as part of the prompt.</span></p>
+                <br>
+                <p><br><span style="color: silver;">This approach improves the accuracy, relevance, and factual grounding of the LLM’s output, especially 
+                    for domain-specific tasks like customer support, legal analysis, or personalized recommendations. In short, RAG bridges the gap between 
+                    static model knowledge and dynamic, up-to-date information.</span></p>
+
+                <hr class="thin-line">
+                <h3 style="text-align: left;">🔍 LLMs and Automation<hr class="thin-line"></h3>
+                <p><span style="color: silver;">LLMs are increasingly being used as agents in automated workflows—handling emails, generating reports, 
+                    summarizing data, or even acting on instructions using tools like APIs and databases. When combined with platforms like Make.com or Zapier, 
+                    LLMs can operate as digital coworkers, reducing manual effort and increasing productivity across industries.</span></p>
+
+                <hr class="thin-line">
+                <h3 style="text-align: left;">🔍 The Future of LLMs and AI Agents<hr class="thin-line"></h3>
+                <p><span style="color: silver;">The future of LLMs lies in their evolution from passive responders to autonomous AI agents capable of planning, 
+                    reasoning, and executing tasks across multiple domains. With better memory, tool integration, and human-like understanding, AI agents 
+                    will transform how we work, collaborate, and interact with technology.</span></p>                    
+            </div>
+            
+
+        </div>
+    </div>    
+
+
+
+    <br><br><br>
+
+    <div class="container1">
+        <a href="index.html#header" class="home-icon">
+            <i class="fas fa-home"></i>
+        </a>
+        <a href="llm.html" class="home-icon">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a> <br><br>
+        <span style="color: silver;">Home Top</span>
+    </div>    
+</div>
+
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+
+
+
+<!-- Add the canvas for paper planes background -->
+<canvas id="planeCanvas" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;"></canvas>
+
+<script>
+    const canvas = document.getElementById("planeCanvas");
+    const ctx = canvas.getContext("2d");
+    
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    
+    window.addEventListener("resize", () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+    
+    //const paperPlaneSrc = "data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjNGI5MGUyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAxMS41bDE4LjY1LTEwLjMzYy4zNi0uMi44Mi4xLjgzLjU0bC4wMSAxOC41MWMwIC40Mi0uNDYgLjctLjg2LjU1TDE0IDE2bC0xLjc5IDYuMTZhLjY2LjY2IDAgMDEtMS4yNi4wMkw5IDE2bC02LjI4LjM0Yy0uNDIuMDItLjcxLS40My0uNTItLjgzTDIgMTEuNXoiLz48L3N2Zz4=";
+    //const planeImage = new Image();
+    //planeImage.src = paperPlaneSrc;
+
+    
+	// Set your image URL here
+	const planeImage = new Image();
+	planeImage.src = '/images/paperplane1.svg'; // Replace with the actual image path
+
+    let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+    let isMouseIdle = false;
+    let lastMouseMove = Date.now();
+    let idleThreshold = 3000; // 3 seconds
+    
+    let planes = [];
+    
+    for (let i = 0; i < 6; i++) {
+      planes.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        size: 20 + Math.random() * 10,
+        speed: 1 + Math.random() * 2,
+        angle: Math.random() * Math.PI * 2,
+        idleDir: Math.random() * Math.PI * 2,
+      });
+    }
+    
+    // Track mouse activity
+    document.addEventListener("mousemove", (e) => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+      lastMouseMove = Date.now();
+      isMouseIdle = false;
+    });
+    
+    // Periodically check for idle
+    setInterval(() => {
+      isMouseIdle = Date.now() - lastMouseMove > idleThreshold;
+    }, 500);
+    
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+      planes.forEach((plane) => {
+        let angle;
+    
+        if (isMouseIdle) {
+          // Float in a random-ish direction
+          plane.idleDir += (Math.random() - 0.5) * 0.1; // add wiggle
+          angle = plane.idleDir;
+        } else {
+          // Move toward mouse
+          const dx = mouse.x - plane.x;
+          const dy = mouse.y - plane.y;
+          angle = Math.atan2(dy, dx);
+          plane.idleDir = angle; // update idle direction to match current flight path
+        }
+    
+        plane.angle = angle;
+        plane.x += Math.cos(angle) * plane.speed * 1;
+        plane.y += Math.sin(angle) * plane.speed * 1;
+    
+        // Wrap around screen edges
+        if (plane.x < 0) plane.x = canvas.width;
+        if (plane.x > canvas.width) plane.x = 0;
+        if (plane.y < 0) plane.y = canvas.height;
+        if (plane.y > canvas.height) plane.y = 0;
+    
+        // Draw the plane
+        ctx.save();
+        ctx.translate(plane.x, plane.y);
+        ctx.rotate(angle);
+        ctx.drawImage(planeImage, -plane.size / 2, -plane.size / 2, plane.size, plane.size);
+        ctx.restore();
+      });
+    
+      requestAnimationFrame(animate);
+    }
+    
+    planeImage.onload = () => {
+      animate();
+    };
+    </script>
+
+
+
+</body>
+</html>
