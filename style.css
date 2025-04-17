@@ -105,7 +105,22 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-
+#page11-intheader{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/compvision.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#page12-intheader{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/aiauto.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 /* Tabel styling */
 
 table {
